@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/telegram', 'TelegramController@index');
+
+
+Route::get('/telegram/webhooks', 'WebhooksController@index');
+
+
